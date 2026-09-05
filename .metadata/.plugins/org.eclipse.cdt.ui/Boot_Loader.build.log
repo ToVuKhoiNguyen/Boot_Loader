@@ -1,0 +1,6 @@
+21:56:55 **** Incremental Build of configuration GNU ARM v12.2.1 - Debug for project Boot_Loader ****
+make -j20 all 
+make: Nothing to be done for 'all'.
+
+21:56:55 Build Finished. 0 errors, 0 warnings. (took 139ms)
+

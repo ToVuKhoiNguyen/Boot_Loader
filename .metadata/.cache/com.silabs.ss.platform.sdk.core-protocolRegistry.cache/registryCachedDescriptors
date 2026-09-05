@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="ASCII"?>
+<model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="Micrium OS Kernel" description="&lt;pre>SL-MOS-KRNX-000000-P-P1&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/platform/micrium_os/micrium-krnx.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="5.18.2._-1463613888"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value="mcu.arm.efm32.pg2[1-9].* mcu.arm.efr32.[pbfmsz]g2[1-9].*"/>
+    <properties key="sdk.subLabel" value="Micrium\ OS\ Kernel\ 5.18.02"/>
+    <properties key="installedUnit" value="krnx"/>
+    <properties key="sdk.docsFile" value="C:\SiliconLabs\simplicity-sdk\platform\micrium_os\micrium-krnx-docs.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.micrium"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="Multiprotocol" description="&lt;pre>Multiprotocol Sample Applications&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/protocol/multiprotocol/esf.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="8.0.0.0_1757389671"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*host.* .*rm21.* .*efr32m[gr]2.* .*mgm2.* .*simg301.*"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\protocol\multiprotocol\..\multiprotocol\multiprotocol_production_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\multiprotocol\..\multiprotocol\multiprotocol_internal_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\multiprotocol\..\multiprotocol\multiprotocol_experimental_templates.xml"/>
+    <properties key="sdk.demosFile" value="C:\SiliconLabs\simplicity-sdk\protocol\multiprotocol\multiprotocol_production_demos.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.multiprotocol"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="Platform" description="&lt;pre>Platform&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/app/common/app_common.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="5.2.3.0_334433685"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.subLabel" value="Platform\ 5.2.3.0"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\app\common\platform_deprecated_templates.xml C:\SiliconLabs\simplicity-sdk\app\common\platform_test_templates.xml C:\SiliconLabs\simplicity-sdk\app\common\platform_unknown_templates.xml C:\SiliconLabs\simplicity-sdk\app\common\platform_evaluation_templates.xml C:\SiliconLabs\simplicity-sdk\app\common\platform_experimental_templates.xml C:\SiliconLabs\simplicity-sdk\app\common\builtin_templates.xml C:\SiliconLabs\simplicity-sdk\app\common\platform_production_templates.xml C:\SiliconLabs\simplicity-sdk\app\common\platform_internal_templates.xml"/>
+    <properties key="sdk.demosFile" value="C:\SiliconLabs\simplicity-sdk\app\common\platform_production_demos.xml C:\SiliconLabs\simplicity-sdk\app\common\platform_evaluation_demos.xml C:\SiliconLabs\simplicity-sdk\app\common\platform_experimental_demos.xml C:\SiliconLabs\simplicity-sdk\app\common\platform_deprecated_demos.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.platform"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="Gecko Bootloader" description="&lt;pre>Gecko Bootloader for EFM32 and EFR32 devices&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/platform/bootloader/esf.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="2.1.0._2062048584"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="protocol.protocolKey" value="BOOTLOADER"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\platform\bootloader\bootloader_evaluation_templates.xml C:\SiliconLabs\simplicity-sdk\platform\bootloader\bootloader_internal_templates.xml C:\SiliconLabs\simplicity-sdk\platform\bootloader\bootloader_production_templates.xml"/>
+    <properties key="sdk.docsFile" value="C:\SiliconLabs\simplicity-sdk\platform\bootloader\documentation\gecko_bootloader_documentation.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.bootloader"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="OpenThread SDK" description="&lt;pre>OpenThread stack support for EFR32 devices&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/protocol/openthread/esf.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="2.7.3.0_1948818974"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*efr32m[gr]2.* .*mgm2.* .*simg301.*"/>
+    <properties key="sdk.subLabel" value="OpenThread\ 2.7.3.0\ (GitHub-fb0446f53)"/>
+    <properties key="protocol.protocolKey" value="openthread"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\protocol\openthread\openthread_experimental_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\openthread\openthread_evaluation_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\openthread\openthread_internal_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\openthread\openthread_production_templates.xml"/>
+    <properties key="sdk.useGCCUserObjs" value="openthread"/>
+    <properties key="sdk.docsFile" value="C:\SiliconLabs\simplicity-sdk\protocol\openthread\documentation\slOpenthread_docContent.xml"/>
+    <properties key="core.boardCompatibility" value=".*"/>
+    <properties key="sdk.demosFile" value="C:\SiliconLabs\simplicity-sdk\protocol\openthread\openthread_production_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\openthread\openthread_evaluation_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\openthread\openthread_experimental_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\openthread\openthread_investigation_demos.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.openthread"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="USB SDK" description="&lt;pre>USB stack support for EFM32 and EFR32 devices&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/protocol/usb/usb.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="1.5.1.0_-1867316410"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.subLabel" value="USB\ 1.5.1.0"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.usb"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="EmberZNet SDK" description="&lt;pre>Silicon Labs EmberZNet SDK&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/protocol/zigbee/esf.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="8.2.2.0_-166705240"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*host.* .*rm21.* .*efr32m[gr]2.* .*mgm2.* .*simg301.*"/>
+    <properties key="sdk.subLabel" value="EmberZNet\ 8.2.2.0"/>
+    <properties key="protocol.protocolKey" value="znet"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_wwah_production_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_smart_energy_production_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_smart_energy_internal_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_sleepy_to_sleepy_production_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_pro_compliance_internal_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_dmp_gp_proxy_production_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_development_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_experimental_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_evaluation_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_production_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_internal_templates.xml"/>
+    <properties key="zcl.zigbeeTemplateJsonFile" value="C:\SiliconLabs\simplicity-sdk\protocol\zigbee\app\framework\gen-template\gen-templates.json"/>
+    <properties key="zcl.zigbeeZclJsonFile" value="C:\SiliconLabs\simplicity-sdk\protocol\zigbee\..\..\app\zcl\zcl-zap.json"/>
+    <properties key="sdk.docsFile" value="C:\SiliconLabs\simplicity-sdk\protocol\zigbee\documentation\slEmberZNet_docContent.xml"/>
+    <properties key="sdk.demosFile" value="C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_production_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_experimental_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_evaluation_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\zigbee\zigbee_internal_demos.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.znet"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="Z-Wave SDK" description="&lt;pre>Silicon Labs Z-Wave SDK for the EFR32 family&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/protocol/z-wave/zwave.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="7.24.3.0_-574546675"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*efr32zg23.* .*efr32zg28.* .*zgm23.*"/>
+    <properties key="sdk.subLabel" value="Z-Wave\ SDK\ 7.24.3.0"/>
+    <properties key="sdk.adapterPacks" value="C:\SiliconLabs\simplicity-sdk\protocol\z-wave\DevTools\cc_configurator"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_production_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_alpha_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_beta_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_test_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_internal_templates.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_development_templates.xml"/>
+    <properties key="sdk.docsFile" value="C:\SiliconLabs\simplicity-sdk\protocol\z-wave\docs_public\docs.xml"/>
+    <properties key="sdk.demosFile" value="C:\SiliconLabs\simplicity-sdk\protocol\z-wave\Apps\bin\demos.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_production_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_alpha_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_beta_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_test_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_internal_demos.xml C:\SiliconLabs\simplicity-sdk\protocol\z-wave\z-wave_development_demos.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.zwave"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="Bluetooth SDK" description="&lt;pre>Bluetooth Software Development Kit&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/app/bluetooth/esf.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="10.1.2.0_-531973115"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*efr32[bm]g(2[12467]).* .*efr32[fz]g28.* .*bgm(21|22|24|26|27).* .*mgm(21|22|24|26|27).*"/>
+    <properties key="sdk.subLabel" value="Bluetooth\ 10.1.2"/>
+    <properties key="core.boardCompatibility" value=".*"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\app\bluetooth\bluetooth_production_templates.xml C:\SiliconLabs\simplicity-sdk\app\bluetooth\bluetooth_experimental_templates.xml C:\SiliconLabs\simplicity-sdk\app\bluetooth\bluetooth_evaluation_templates.xml C:\SiliconLabs\simplicity-sdk\app\bluetooth\bluetooth_deprecated_templates.xml C:\SiliconLabs\simplicity-sdk\app\bluetooth\bluetooth_internal_templates.xml"/>
+    <properties key="sdk.docsFile" value="C:\SiliconLabs\simplicity-sdk\app\bluetooth\documentation\slBluetooth_docContent.xml"/>
+    <properties key="sdk.demosFile" value="C:\SiliconLabs\simplicity-sdk\app\bluetooth\bluetooth_production_demos.xml C:\SiliconLabs\simplicity-sdk\app\bluetooth\bluetooth_experimental_demos.xml C:\SiliconLabs\simplicity-sdk\app\bluetooth\bluetooth_evaluation_demos.xml C:\SiliconLabs\simplicity-sdk\app\bluetooth\bluetooth_deprecated_demos.xml C:\SiliconLabs\simplicity-sdk\app\bluetooth\bluetooth_internal_demos.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.stack.ble"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="Bluetooth Mesh SDK" description="&lt;pre>Bluetooth Mesh Software Development Kit&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/app/btmesh/btmesh.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="9.1.0.0_-849222989"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*efr32bg2(1|2.*f512|4).* .*efr32mg2[1247].* .*mgm(2[124]).* .*bgm(21|22.*hna|24).*"/>
+    <properties key="sdk.subLabel" value="Bluetooth\ Mesh\ 9.1.0"/>
+    <properties key="core.boardCompatibility" value=".*"/>
+    <properties key="sdk.adapterPacks" value="C:\SiliconLabs\simplicity-sdk\app\btmesh\script\generator"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\app\btmesh\btmesh_experimental_templates.xml C:\SiliconLabs\simplicity-sdk\app\btmesh\btmesh_production_templates.xml C:\SiliconLabs\simplicity-sdk\app\btmesh\btmesh_internal_templates.xml C:\SiliconLabs\simplicity-sdk\app\btmesh\btmesh_srtest_internal_templates.xml C:\SiliconLabs\simplicity-sdk\app\btmesh\btmesh_long_packets_test_internal_templates.xml"/>
+    <properties key="sdk.docsFile" value="C:\SiliconLabs\simplicity-sdk\app\btmesh\documentation\slBtMesh_docContent.xml"/>
+    <properties key="sdk.demosFile" value="C:\SiliconLabs\simplicity-sdk\app\btmesh\btmesh_production_demos.xml C:\SiliconLabs\simplicity-sdk\app\btmesh\btmesh_experimental_demos.xml C:\SiliconLabs\simplicity-sdk\app\btmesh\btmesh_internal_demos.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.stack.btMesh"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="Connect SDK" description="&lt;pre>Connect Software Development Kit&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/app/connect/esf.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="4.1.3._500451977"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*efr32[bfmz]g2.* .*mgm2.* .*rm21.* .*fgm230s.* .*zgm2.* .*bgm220sc2[2-3]hna.*"/>
+    <properties key="sdk.subLabel" value="Connect\ 4.1.3"/>
+    <properties key="sdk.adapterPacks" value="C:\SiliconLabs\simplicity-sdk\app\connect\..\..\platform\radio\efr32_multiphy_configurator"/>
+    <properties key="core.boardCompatibility" value=".*"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\app\connect\connect_production_templates.xml C:\SiliconLabs\simplicity-sdk\app\connect\connect_demos_only_templates.xml C:\SiliconLabs\simplicity-sdk\app\connect\connect_internal_templates.xml C:\SiliconLabs\simplicity-sdk\app\connect\connect_evaluation_templates.xml"/>
+    <properties key="sdk.docsFile" value="C:\SiliconLabs\simplicity-sdk\app\connect\documentation\slConnect_docContent.xml"/>
+    <properties key="sdk.demosFile" value="C:\SiliconLabs\simplicity-sdk\app\connect\connect_production_demos.xml C:\SiliconLabs\simplicity-sdk\app\connect\connect_experimental_demos.xml C:\SiliconLabs\simplicity-sdk\app\connect\connect_evaluation_demos.xml C:\SiliconLabs\simplicity-sdk\app\connect\connect_deprecated_demos.xml C:\SiliconLabs\simplicity-sdk\app\connect\connect_internal_demos.xml C:\SiliconLabs\simplicity-sdk\app\connect\connect_demos_only_demos.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.stack.connect"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="RAIL SDK" description="&lt;pre>RAIL Software Development Kit&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/app/rail/esf.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="2.19.3._44666375"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*efr32[bfmz]g2.* .*mgm2.* .*rm21.* .*fgm230s.* .*zgm2.* .*bgm220sc2[2-3]hna.*"/>
+    <properties key="sdk.subLabel" value="RAIL\ 2.19.3"/>
+    <properties key="sdk.adapterPacks" value="C:\SiliconLabs\simplicity-sdk\app\rail\..\..\platform\radio\efr32_multiphy_configurator"/>
+    <properties key="core.boardCompatibility" value=".*"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\app\rail\rail_production_templates.xml C:\SiliconLabs\simplicity-sdk\app\rail\rail_demos_only_templates.xml C:\SiliconLabs\simplicity-sdk\app\rail\rail_internal_templates.xml C:\SiliconLabs\simplicity-sdk\app\rail\rail_evaluation_templates.xml"/>
+    <properties key="sdk.docsFile" value="C:\SiliconLabs\simplicity-sdk\app\rail\documentation\slRail_docContent.xml"/>
+    <properties key="sdk.demosFile" value="C:\SiliconLabs\simplicity-sdk\app\rail\rail_production_demos.xml C:\SiliconLabs\simplicity-sdk\app\rail\rail_experimental_demos.xml C:\SiliconLabs\simplicity-sdk\app\rail\rail_evaluation_demos.xml C:\SiliconLabs\simplicity-sdk\app\rail\rail_deprecated_demos.xml C:\SiliconLabs\simplicity-sdk\app\rail\rail_internal_demos.xml C:\SiliconLabs\simplicity-sdk\app\rail\rail_demos_only_demos.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.stack.rail"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381" label="Wi-SUN" description="&lt;pre>Silicon Labs Wi-SUN SDK&lt;/pre>">
+    <properties key="core.installationPath" value="file:///C:/SiliconLabs/simplicity-sdk/app/wisun/esf.properties"/>
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.6.3._-262535381"/>
+    <properties key="core.version" value="2.9.2._701773465"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*efr32fg23.* .*efr32zg23.* .*efr32fg25.* .*efr32fg28.* .*efr32zg28.*"/>
+    <properties key="sdk.subLabel" value="Wi-SUN\ 2.9.2"/>
+    <properties key="sdk.adapterPacks" value="C:\SiliconLabs\simplicity-sdk\app\wisun\..\..\platform\radio\efr32_multiphy_configurator C:\SiliconLabs\simplicity-sdk\app\wisun\component\wisun_config\scripts C:\SiliconLabs\simplicity-sdk\app\wisun\component\wisun_config\scripts\ddp"/>
+    <properties key="core.boardCompatibility" value=".*"/>
+    <properties key="sdk.templatesFile" value="C:\SiliconLabs\simplicity-sdk\app\wisun\wisun_production_templates.xml C:\SiliconLabs\simplicity-sdk\app\wisun\wisun_br_demos_templates.xml C:\SiliconLabs\simplicity-sdk\app\wisun\wisun_evaluation_templates.xml"/>
+    <properties key="sdk.docsFile" value="C:\SiliconLabs\simplicity-sdk\app\wisun\documentation\slWi-SUN_docContent.xml"/>
+    <properties key="sdk.demosFile" value="C:\SiliconLabs\simplicity-sdk\app\wisun\wisun_production_demos.xml C:\SiliconLabs\simplicity-sdk\app\wisun\wisun_beta_demos.xml C:\SiliconLabs\simplicity-sdk\app\wisun\wisun_alpha_demos.xml C:\SiliconLabs\simplicity-sdk\app\wisun\wisun_internal_demos.xml C:\SiliconLabs\simplicity-sdk\app\wisun\wisun_br_demos_demos.xml C:\SiliconLabs\simplicity-sdk\app\wisun\wisun_evaluation_demos.xml"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.stack.wisun"/>
+  </descriptors>
+</model:MDescriptors>

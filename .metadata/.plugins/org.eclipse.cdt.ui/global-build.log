@@ -1,0 +1,188 @@
+21:51:11 **** Incremental Build of configuration GNU ARM v12.2.1 - Slot_B for project Application ****
+make -j20 all 
+Building file: ../src/app_2.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m33 -mthumb -std=c18 '-DDEBUG=1' '-DDEBUG_EFM=1' '-DBGM220PC22HNA=1' '-DSL_CODE_COMPONENT_SYSTEM=system' '-DHARDWARE_BOARD_DEFAULT_RF_BAND_2400=1' '-DHARDWARE_BOARD_SUPPORTS_1_RF_BAND=1' '-DHARDWARE_BOARD_SUPPORTS_RF_BAND_2400=1' '-DSL_BOARD_NAME="BRD4314A"' '-DSL_BOARD_REV="A02"' '-DSL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager' '-DSL_COMPONENT_CATALOG_PRESENT=1' '-DSL_CODE_COMPONENT_GPIO=gpio' '-DSL_CODE_COMPONENT_HAL_COMMON=hal_common' '-DSL_CODE_COMPONENT_HAL_GPIO=hal_gpio' '-DSL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager' '-DCMSIS_NVIC_VIRTUAL=1' '-DCMSIS_NVIC_VIRTUAL_HEADER_FILE="cmsis_nvic_virtual.h"' '-DSL_CODE_COMPONENT_CORE=core' -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\config" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\autogen" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\Device\SiliconLabs\BGM22\Include" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\hardware\board\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\clock_manager\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\clock_manager\src" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\CMSIS\Core\Include" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\common\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\device_manager\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\device_init\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\emlib\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\driver\gpio\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\peripheral\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\src" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\memory_manager\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\sl_main\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\sl_main\src" -Os -Wall -Wextra -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -mcmse -mfpu=fpv5-sp-d16 -mfloat-abi=hard -fno-lto --specs=nano.specs -c -fmessage-length=0 -MMD -MP -MF"src/app_2.d" -MT"src/app_2.o" -o "src/app_2.o" "../src/app_2.c"
+../src/app_2.c:33:33: error: expected ')' before numeric constant
+   33 | CMU_ClockEnable(cmuClock_TIMER0, true);
+      |                                 ^
+      |                                 )
+../src/app_2.c:36:10: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+   36 | timerInit.enable = false; // Chưa cho chạy vội
+      |          ^
+In file included from C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\Device\SiliconLabs\BGM22\Include/em_device.h:45,
+                 from C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\emlib\inc/em_cmu.h:33,
+                 from ../src/app_2.c:1:
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\Device\SiliconLabs\BGM22\Include/bgm220pc22hna.h:907:33: error: expected declaration specifiers or '...' before '(' token
+  907 | #define TIMER0                  ((TIMER_TypeDef *) TIMER0_BASE)                           /**< TIMER0 base pointer */
+      |                                 ^
+../src/app_2.c:38:12: note: in expansion of macro 'TIMER0'
+   38 | TIMER_Init(TIMER0, &timerInit);
+      |            ^~~~~~
+../src/app_2.c:38:20: error: expected declaration specifiers or '...' before '&' token
+   38 | TIMER_Init(TIMER0, &timerInit);
+      |                    ^
+../src/app_2.c:40:22: error: initializer element is not constant
+   40 | uint32_t top_value = (SystemCoreClock / (PWM_PERIOD_STEPS * 1000U)) - 1U;
+      |                      ^
+../src/app_2.c:41:1: error: expected identifier or '(' before 'if'
+   41 | if (top_value < 1U) {
+      | ^~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\Device\SiliconLabs\BGM22\Include/bgm220pc22hna.h:907:33: error: expected declaration specifiers or '...' before '(' token
+  907 | #define TIMER0                  ((TIMER_TypeDef *) TIMER0_BASE)                           /**< TIMER0 base pointer */
+      |                                 ^
+../src/app_2.c:44:14: note: in expansion of macro 'TIMER0'
+   44 | TIMER_TopSet(TIMER0, top_value);
+      |              ^~~~~~
+../src/app_2.c:44:22: error: expected declaration specifiers or '...' before 'top_value'
+   44 | TIMER_TopSet(TIMER0, top_value);
+      |                      ^~~~~~~~~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\Device\SiliconLabs\BGM22\Include/bgm220pc22hna.h:907:33: error: expected declaration specifiers or '...' before '(' token
+  907 | #define TIMER0                  ((TIMER_TypeDef *) TIMER0_BASE)                           /**< TIMER0 base pointer */
+      |                                 ^
+../src/app_2.c:47:17: note: in expansion of macro 'TIMER0'
+   47 | TIMER_IntEnable(TIMER0, TIMER_IEN_OF);
+      |                 ^~~~~~
+In file included from C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\Device\SiliconLabs\BGM22\Include/bgm220pc22hna.h:455:
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\Device\SiliconLabs\BGM22\Include/bgm22_timer.h:529:52: error: expected declaration specifiers or '...' before '(' token
+  529 | #define TIMER_IEN_OF                               (0x1UL << 0)                          /**< Overflow Interrupt Enable                   */
+      |                                                    ^
+../src/app_2.c:47:25: note: in expansion of macro 'TIMER_IEN_OF'
+   47 | TIMER_IntEnable(TIMER0, TIMER_IEN_OF);
+      |                         ^~~~~~~~~~~~
+In file included from C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\CMSIS\Core\Include/core_cm33.h:2287,
+                 from C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\Device\SiliconLabs\BGM22\Include/bgm220pc22hna.h:430:
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm/cmsis_nvic_virtual.h:47:37: warning: data definition has no type or storage class
+   47 | #define NVIC_ClearPendingIRQ(irqn)  sl_interrupt_manager_clear_irq_pending(irqn)
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm/cmsis_nvic_virtual.h:47:37: note: in definition of macro 'NVIC_ClearPendingIRQ'
+   47 | #define NVIC_ClearPendingIRQ(irqn)  sl_interrupt_manager_clear_irq_pending(irqn)
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm/cmsis_nvic_virtual.h:47:37: warning: type defaults to 'int' in declaration of 'sl_interrupt_manager_clear_irq_pending' [-Wimplicit-int]
+   47 | #define NVIC_ClearPendingIRQ(irqn)  sl_interrupt_manager_clear_irq_pending(irqn)
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm/cmsis_nvic_virtual.h:47:37: note: in definition of macro 'NVIC_ClearPendingIRQ'
+   47 | #define NVIC_ClearPendingIRQ(irqn)  sl_interrupt_manager_clear_irq_pending(irqn)
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app_2.c:48:1: warning: parameter names (without types) in function declaration
+   48 | NVIC_ClearPendingIRQ(TIMER0_IRQn);
+      | ^~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm/cmsis_nvic_virtual.h:47:37: error: conflicting types for 'sl_interrupt_manager_clear_irq_pending'; have 'int()'
+   47 | #define NVIC_ClearPendingIRQ(irqn)  sl_interrupt_manager_clear_irq_pending(irqn)
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm/cmsis_nvic_virtual.h:47:37: note: in definition of macro 'NVIC_ClearPendingIRQ'
+   47 | #define NVIC_ClearPendingIRQ(irqn)  sl_interrupt_manager_clear_irq_pending(irqn)
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm/cmsis_nvic_virtual.h:33:
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc/sl_interrupt_manager.h:230:6: note: previous declaration of 'sl_interrupt_manager_clear_irq_pending' with type 'void(int32_t)' {aka 'void(long int)'}
+  230 | void sl_interrupt_manager_clear_irq_pending(int32_t irqn);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm/cmsis_nvic_virtual.h:40:35: warning: data definition has no type or storage class
+   40 | #define NVIC_EnableIRQ(irqn)      sl_interrupt_manager_enable_irq(irqn)
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app_2.c:49:1: note: in expansion of macro 'NVIC_EnableIRQ'
+   49 | NVIC_EnableIRQ(TIMER0_IRQn);
+      | ^~~~~~~~~~~~~~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm/cmsis_nvic_virtual.h:40:35: warning: type defaults to 'int' in declaration of 'sl_interrupt_manager_enable_irq' [-Wimplicit-int]
+   40 | #define NVIC_EnableIRQ(irqn)      sl_interrupt_manager_enable_irq(irqn)
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app_2.c:49:1: note: in expansion of macro 'NVIC_EnableIRQ'
+   49 | NVIC_EnableIRQ(TIMER0_IRQn);
+      | ^~~~~~~~~~~~~~
+../src/app_2.c:49:1: warning: parameter names (without types) in function declaration
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm/cmsis_nvic_virtual.h:40:35: error: conflicting types for 'sl_interrupt_manager_enable_irq'; have 'int()'
+   40 | #define NVIC_EnableIRQ(irqn)      sl_interrupt_manager_enable_irq(irqn)
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app_2.c:49:1: note: in expansion of macro 'NVIC_EnableIRQ'
+   49 | NVIC_EnableIRQ(TIMER0_IRQn);
+      | ^~~~~~~~~~~~~~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc/sl_interrupt_manager.h:160:6: note: previous declaration of 'sl_interrupt_manager_enable_irq' with type 'void(int32_t)' {aka 'void(long int)'}
+  160 | void sl_interrupt_manager_enable_irq(int32_t irqn);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\Device\SiliconLabs\BGM22\Include/bgm220pc22hna.h:907:33: error: expected declaration specifiers or '...' before '(' token
+  907 | #define TIMER0                  ((TIMER_TypeDef *) TIMER0_BASE)                           /**< TIMER0 base pointer */
+      |                                 ^
+../src/app_2.c:52:14: note: in expansion of macro 'TIMER0'
+   52 | TIMER_Enable(TIMER0, true);
+      |              ^~~~~~
+In file included from C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc/sl_interrupt_manager.h:35:
+../src/app_2.c:52:22: error: expected declaration specifiers or '...' before numeric constant
+   52 | TIMER_Enable(TIMER0, true);
+      |                      ^~~~
+../src/app_2.c:53:1: error: expected identifier or '(' before '}' token
+   53 | }
+      | ^
+../src/app_2.c: In function 'APP_Run':
+../src/app_2.c:59:3: warning: implicit declaration of function 'PWM_TimerInit' [-Wimplicit-function-declaration]
+   59 |   PWM_TimerInit();
+      |   ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:20: src/app_2.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+21:52:43 **** Incremental Build of configuration GNU ARM v12.2.1 - Slot_B for project Application ****
+make -j20 all 
+Building file: ../src/app_2.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m33 -mthumb -std=c18 '-DDEBUG=1' '-DDEBUG_EFM=1' '-DBGM220PC22HNA=1' '-DSL_CODE_COMPONENT_SYSTEM=system' '-DHARDWARE_BOARD_DEFAULT_RF_BAND_2400=1' '-DHARDWARE_BOARD_SUPPORTS_1_RF_BAND=1' '-DHARDWARE_BOARD_SUPPORTS_RF_BAND_2400=1' '-DSL_BOARD_NAME="BRD4314A"' '-DSL_BOARD_REV="A02"' '-DSL_CODE_COMPONENT_CLOCK_MANAGER=clock_manager' '-DSL_COMPONENT_CATALOG_PRESENT=1' '-DSL_CODE_COMPONENT_GPIO=gpio' '-DSL_CODE_COMPONENT_HAL_COMMON=hal_common' '-DSL_CODE_COMPONENT_HAL_GPIO=hal_gpio' '-DSL_CODE_COMPONENT_INTERRUPT_MANAGER=interrupt_manager' '-DCMSIS_NVIC_VIRTUAL=1' '-DCMSIS_NVIC_VIRTUAL_HEADER_FILE="cmsis_nvic_virtual.h"' '-DSL_CODE_COMPONENT_CORE=core' -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\config" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\autogen" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\Device\SiliconLabs\BGM22\Include" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\hardware\board\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\clock_manager\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\clock_manager\src" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\CMSIS\Core\Include" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\common\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\device_manager\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\device_init\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\emlib\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\driver\gpio\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\peripheral\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\src" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\interrupt_manager\inc\arm" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\memory_manager\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\sl_main\inc" -I"C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\simplicity_sdk_2025.6.3\platform\service\sl_main\src" -Os -Wall -Wextra -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -mcmse -mfpu=fpv5-sp-d16 -mfloat-abi=hard -fno-lto --specs=nano.specs -c -fmessage-length=0 -MMD -MP -MF"src/app_2.d" -MT"src/app_2.o" -o "src/app_2.o" "../src/app_2.c"
+Finished building: ../src/app_2.c
+ 
+Building target: raw_b.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m33 -mthumb -T "C:\Users\Admin\SimplicityStudio\v5_workspace\Mock_Project\Application\linker_slot_b.ld" -fno-lto -Wl,--no-warn-rwx-segments -Xlinker --gc-sections -Xlinker -Map="raw_b.map" -mfpu=fpv5-sp-d16 -mfloat-abi=hard --specs=nano.specs -o raw_b.axf -Wl,--start-group "./app.o" "./main.o" "./autogen/sl_board_default_init.o" "./autogen/sl_event_handler.o" "./simplicity_sdk_2025.6.3/hardware/board/src/sl_board_control_gpio.o" "./simplicity_sdk_2025.6.3/hardware/board/src/sl_board_init.o" "./simplicity_sdk_2025.6.3/platform/Device/SiliconLabs/BGM22/Source/startup_bgm22.o" "./simplicity_sdk_2025.6.3/platform/Device/SiliconLabs/BGM22/Source/system_bgm22.o" "./simplicity_sdk_2025.6.3/platform/common/src/sl_assert.o" "./simplicity_sdk_2025.6.3/platform/common/src/sl_core_cortexm.o" "./simplicity_sdk_2025.6.3/platform/common/src/sl_syscalls.o" "./simplicity_sdk_2025.6.3/platform/driver/gpio/src/sl_gpio.o" "./simplicity_sdk_2025.6.3/platform/emlib/src/em_cmu.o" "./simplicity_sdk_2025.6.3/platform/emlib/src/em_emu.o" "./simplicity_sdk_2025.6.3/platform/emlib/src/em_gpio.o" "./simplicity_sdk_2025.6.3/platform/emlib/src/em_msc.o" "./simplicity_sdk_2025.6.3/platform/emlib/src/em_system.o" "./simplicity_sdk_2025.6.3/platform/emlib/src/em_timer.o" "./simplicity_sdk_2025.6.3/platform/peripheral/src/sl_hal_gpio.o" "./simplicity_sdk_2025.6.3/platform/service/clock_manager/src/sl_clock_manager.o" "./simplicity_sdk_2025.6.3/platform/service/clock_manager/src/sl_clock_manager_hal_s2.o" "./simplicity_sdk_2025.6.3/platform/service/clock_manager/src/sl_clock_manager_init.o" "./simplicity_sdk_2025.6.3/platform/service/clock_manager/src/sl_clock_manager_init_hal_s2.o" "./simplicity_sdk_2025.6.3/platform/service/device_init/src/sl_device_init_dcdc_s2.o" "./simplicity_sdk_2025.6.3/platform/service/device_init/src/sl_device_init_emu_s2.o" "./simplicity_sdk_2025.6.3/platform/service/device_manager/clocks/sl_device_clock_efr32xg22.o" "./simplicity_sdk_2025.6.3/platform/service/device_manager/src/sl_device_clock.o" "./simplicity_sdk_2025.6.3/platform/service/device_manager/src/sl_device_gpio.o" "./simplicity_sdk_2025.6.3/platform/service/interrupt_manager/src/sl_interrupt_manager_cortexm.o" "./simplicity_sdk_2025.6.3/platform/service/memory_manager/src/sl_memory_manager_region.o" "./simplicity_sdk_2025.6.3/platform/service/sl_main/src/sl_main_init.o" "./simplicity_sdk_2025.6.3/platform/service/sl_main/src/sl_main_init_memory.o" "./simplicity_sdk_2025.6.3/platform/service/sl_main/src/sl_main_process_action.o" "./src/app_2.o" -lgcc -lc -lm -lnosys -Wl,--end-group -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: raw_b.axf
+ 
+Building out file: raw_b.out
+arm-none-eabi-objcopy "raw_b.axf" "raw_b.out"
+ 
+Building hex file: raw_b.hex
+arm-none-eabi-objcopy -O ihex "raw_b.axf" "raw_b.hex"
+ 
+Building bin file: raw_b.bin
+arm-none-eabi-objcopy -O binary "raw_b.axf" "raw_b.bin"
+ 
+Building s37 file: raw_b.s37
+arm-none-eabi-objcopy -O srec "raw_b.axf" "raw_b.s37"
+ 
+Running size tool
+arm-none-eabi-size "raw_b.axf" -A
+raw_b.axf  :
+section                  size        addr
+.vectors                  320      131584
+.stack                   4096   536870912
+.bss                      408   536875008
+text_application_ram        0   536875416
+.text                    8632      131904
+.ARM.exidx                  8      140536
+.copy.table                12      140544
+.zero.table                 0      140556
+.data                      28   536875416
+.heap                   28236   536875444
+.ARM.attributes            54           0
+.comment                   69           0
+.debug_line_str           231           0
+.debug_info            161129           0
+.debug_abbrev           17071           0
+.debug_aranges           3616           0
+.debug_ranges            5024           0
+.debug_line             53736           0
+.debug_str              45819           0
+.debug_frame             8796           0
+.debug_loc              42767           0
+Total                  380052
+
+
+ 
+21:52:44 **** Incremental Build of configuration GNU ARM v12.2.1 - Debug for project Boot_Loader ****
+make -j20 all 
+make: Nothing to be done for 'all'.
+21:52:51 **** Incremental Build of configuration GNU ARM v12.2.1 - Slot_B for project Application ****
+make -j20 all 
+make: Nothing to be done for 'all'.
+21:52:51 **** Incremental Build of configuration GNU ARM v12.2.1 - Debug for project Boot_Loader ****
+make -j20 all 
+make: Nothing to be done for 'all'.
+21:56:54 **** Incremental Build of configuration GNU ARM v12.2.1 - Slot_B for project Application ****
+make -j20 all 
+make: Nothing to be done for 'all'.
+21:56:55 **** Incremental Build of configuration GNU ARM v12.2.1 - Debug for project Boot_Loader ****
+make -j20 all 
+make: Nothing to be done for 'all'.
